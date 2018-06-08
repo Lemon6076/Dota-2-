@@ -1,0 +1,56 @@
+//
+//  GDota_Prefix.pch
+//  GDota
+//
+//  Created by lemon on 26/10/17.
+//  Copyright © 2017年 lemon. All rights reserved.
+//
+
+#ifndef GDota_Prefix_pch
+#define GDota_Prefix_pch
+
+//好处：预编译，提高程序的运行效率
+//存放的的是：全局的系统框架，库文件，宏定义，
+
+#define IDPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)firstObject]stringByAppendingPathComponent:@"dotaID.plist"]
+
+#define userPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)firstObject]stringByAppendingPathComponent:@"userData.plist"]
+
+#define itemPath [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)firstObject]stringByAppendingPathComponent:@"Items.plist"]
+
+//下划线加长
+#define UNDERLIN 20
+//底部tabbar高度
+#define RBOTTOM  49
+//顶部导航栏高度
+#define RTOP     95
+
+/***********屏幕适配*************/
+#define MYSScreenW [UIScreen mainScreen].bounds.size.width
+#define MYSScreenH [UIScreen mainScreen].bounds.size.height
+/***********屏幕适配*************/
+
+
+
+#import "MBProgressHUD+MJ.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "MJRefresh.h"
+
+#import "UIWindow+Extension.h"
+#import "UIBarButtonItem+MMY_Extension.h"
+#import "UIView+Extension.h"
+#import "MYS_TabBarController.h"
+#import "MYS_NavigationViewController.h"
+
+#import "MYSset_TableViewCell.h"
+#import "MYSletfMenu_TableViewCell.h"
+#import "MYSheros_TableViewCell.h"
+
+#import "MYSsetTilte_Label.h"
+#import "MYStitle_Button.h"
+#import "MYSexitRound_Button.h"
+#import "MYS_TabBar.h"
+#import "MYS_searchBar.h"
+
+#endif /* GDota_Prefix_pch */
